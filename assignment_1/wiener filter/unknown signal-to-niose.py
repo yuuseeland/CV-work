@@ -2,7 +2,7 @@ import numpy as np
 from scipy import fftpack
 from PIL import Image
 
-def wiener_filter(image, snr=30, k=1):
+def wiener_filter(image, snr=0.6e-8, k=1):
     # 转换为灰度图像
     gray_image = image.convert("L")
     
